@@ -8,6 +8,7 @@ const router = express.Router();
 console.log("Router Activated");
 
 router.get('/',homeController.home );
+router.use('/users', require('./users_routes'));
 
 module.exports = router;
 

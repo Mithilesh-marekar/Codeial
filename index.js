@@ -12,7 +12,7 @@ app.use('/', require('./routes')); // goes to routes folder to access routes
 
 
 //binding to port no and listning for any connections .
-app.listen(port, function(err){
+app .listen(port, function(err){
     // if error in connection , print this on console.
     if (err) {  
         // using `  ` to print on console. it is called INTERPOLATION Method.
