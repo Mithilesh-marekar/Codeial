@@ -9,6 +9,12 @@ const port = 8000;
  app.use('/', require('./routes')); // goes to routes folder to access routes
 
 
+//Using ejs as my view engine
+//Setting up view engine
+app.set('view engine', ejs);
+app.set('views', './views' );
+
+
 
 
 //binding to port no and listning for any connections .
