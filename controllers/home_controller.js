@@ -1,6 +1,7 @@
-module.exports.home = function(req, res){
+module.exports.home = (req, res) =>{
     return res.end('<h1>Express is up for codial !!!</h1>');
 }
+
 
 //creating Controller.
 //module.exports.actionName = function(req,res){}
