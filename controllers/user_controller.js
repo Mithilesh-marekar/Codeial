@@ -1,3 +1,3 @@
-// moudule.exports.profile = function(req, res){
-//     return ('<h1>User Profile Controller</h1>');
-// }
+module.exports.profile = function(req, res){
+  return  res.end('<h1>User Profile Controller</h1>');
+}

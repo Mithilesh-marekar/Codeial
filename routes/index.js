@@ -10,7 +10,13 @@ console.log("Router Activated");
 
 //accessing controller action
 router.get('/',homeController.home );
-// router.use('/users', require('./users_routes'));
+
+//List of other routes controlled by this route. 'i.e index.js'
+router.use('/users', require('./users_routes')); //users_routes
+
+//for any further router access from here
+// router.use('routeName', require('./routerfile'));
+
 
 //to make it available to app index.js
 module.exports = router;
