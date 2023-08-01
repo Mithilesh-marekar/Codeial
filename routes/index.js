@@ -3,12 +3,15 @@
 //  the instance of express that can be used anywhere.
 
 const express = require('express'); 
+//accessing Controller
 const homeController = require('../controllers/home_controller');
 const router = express.Router();
 console.log("Router Activated");
 
+//accessing controller action
 router.get('/',homeController.home );
-router.use('/users', require('./users_routes'));
+// router.use('/users', require('./users_routes'));
 
+//to make it available to app index.js
 module.exports = router;
 

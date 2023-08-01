@@ -6,7 +6,7 @@ const port = 8000;
 
 
 //use express router
-app.use('/', require('./routes')); // goes to routes folder to access routes
+ app.use('/', require('./routes')); // goes to routes folder to access routes
 
 
 
