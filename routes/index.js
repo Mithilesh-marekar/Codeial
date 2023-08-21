@@ -11,9 +11,9 @@ console.log("Router Activated");
 //accessing controller action
 router.get('/',homeController.home );
 
+
+
 //List of other routes controlled by this route. 'i.e index.js'
-
-
 router.use('/users', require ("./users_route") );//users route
 
 //post route
