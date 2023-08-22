@@ -4,6 +4,10 @@ const app = express();
 //Port No
 const port = 8000;
 
+// Requireng the "express-ejs-layouts" library for layouts in views.
+const expressLayouts = require('express-ejs-layouts');
+// using Express Layouts.
+app.use(expressLayouts);
 
 //use express router
  app.use('/', require('./routes')); // goes to routes folder to access routes
