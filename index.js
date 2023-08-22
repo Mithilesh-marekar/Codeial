@@ -13,6 +13,10 @@ const expressLayouts = require('express-ejs-layouts');
 // using Express Layouts.
 app.use(expressLayouts);
 
+// extract styles and scripts from the sub pages into the layout
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
+
 //use express router
  app.use('/', require('./routes')); // goes to routes folder to access routes
 

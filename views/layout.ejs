@@ -5,7 +5,8 @@
         </title>
 <!-- Linking Layout.css file -->
         <link rel="stylesheet" href="/css/layout.css">
-
+        <!-- whenever the 'body' encounters the 'link' tag it will come here and render. it can be 'style(css file)'' or a 'script' file  -->
+        <%- style %>
     </head>
     <body>
         <!-- Implementing Partials : Header -->
@@ -18,5 +19,7 @@
 
         <!-- Footer -->
         <%- include('footer'); -%>
+        <!-- Renders script whenever link tag is encountered in the 'body' -->
+        <%- script %>
     </body>
 </html>
