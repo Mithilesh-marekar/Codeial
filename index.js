@@ -4,6 +4,10 @@ const app = express();
 //Port No
 const port = 8000;
 
+// Setting up Ststic Files
+app.use(express.static ('./assets'));
+
+
 // Requireng the "express-ejs-layouts" library for layouts in views.
 const expressLayouts = require('express-ejs-layouts');
 // using Express Layouts.
