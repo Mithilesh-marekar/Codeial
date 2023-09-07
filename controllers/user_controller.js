@@ -23,3 +23,11 @@ module.exports.signIn = (req, res) =>{
   })
 }
 
+// To get the Sign uP Data
+module.exports.create = (req,res) =>{
+  //Todo later
+}
+// To get the Sign In Data and create a session for the user
+module.exports.createSession = (req,res) =>{
+  //Todo later
+}

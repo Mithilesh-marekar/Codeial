@@ -12,5 +12,9 @@ router.get('/profile', usersController.profile );
 router.get('/sign-up', usersController.signUp);
 router.get('/sign-in', usersController.signIn);
 
+
+//router.get('/user/create', userController.signUp)
+
+
 //exporting router
 module.exports = router;
