@@ -1,12 +1,19 @@
 //Requiring Express
 const express = require('express');
+// Requiring Cookie-parser
+const cookieParser = require('cookie-parser');
 const app = express();
 //Port No
 const port = 8000;
 // requiring Database.
 const db = require('./config/mongoose');
 
-// Setting up Ststic Files
+//middleware function for parsing incomming requets with url.
+app.use(express.urlencoded());
+// Setting up  Cookie-parser
+app.use(cookieParser());
+
+// Setting up Static Files
 app.use(express.static ('./assets'));
 
 
