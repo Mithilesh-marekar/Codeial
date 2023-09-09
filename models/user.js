@@ -20,6 +20,6 @@ const userSchema = new mongoose.Schema({
 });
 
 //  Telling Mongoose that this is a model/collection.
-const User = mongoose.model('User', userSchema);
+// const User = mongoose.model('User', userSchema);
 //exporting to make this file usable.
-module.exports = user;
+module.exports = mongoose.model('User', userSchema);

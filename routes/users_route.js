@@ -12,8 +12,10 @@ router.get('/profile', usersController.profile );
 router.get('/sign-up', usersController.signUp);
 router.get('/sign-in', usersController.signIn);
 
-
-//router.get('/user/create', userController.signUp)
+// Creating Action to Create sign up form
+router.post('/create', usersController.create);
+// Creating Action to Create Sign IN Session
+router.post('/create-session', usersController.createSession);
 
 
 //exporting router
